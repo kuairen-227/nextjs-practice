@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IoHomeOutline } from "react-icons/io5";
-import NavProjects from "./NavProjects";
-import ProfileIcon from "./ProfileIcon";
+import { NavProjects } from "./NavProjects";
+import { ProfileIcon } from "./ProfileIcon";
 
 export const Header = () => {
   return (

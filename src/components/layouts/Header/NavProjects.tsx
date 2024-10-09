@@ -10,7 +10,7 @@ import {
 import { ProjectList } from "@/feature/projects/api/getProjects";
 import Link from "next/link";
 
-export default function NavProjects() {
+export const NavProjects = () => {
   const projects = ProjectList;
 
   return (
@@ -36,4 +36,4 @@ export default function NavProjects() {
       </NavigationMenuList>
     </NavigationMenu>
   );
-}
+};

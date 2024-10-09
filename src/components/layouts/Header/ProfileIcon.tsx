@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 import { VscAccount } from "react-icons/vsc";
 
-export default function ProfileIcon() {
+export const ProfileIcon = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -23,4 +23,4 @@ export default function ProfileIcon() {
       </NavigationMenuList>
     </NavigationMenu>
   );
-}
+};
