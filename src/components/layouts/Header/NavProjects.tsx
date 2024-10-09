@@ -11,6 +11,7 @@ import { ProjectList } from "@/feature/projects/api/getProjects";
 import Link from "next/link";
 
 export const NavProjects = () => {
+  // TODO: プロジェクト一覧取得機能の実装
   const projects = ProjectList;
 
   return (

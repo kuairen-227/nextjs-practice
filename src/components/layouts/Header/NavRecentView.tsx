@@ -5,20 +5,15 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
-import Link from "next/link";
-import { VscAccount } from "react-icons/vsc";
 
-export const ProfileIcon = () => {
-  // TODO: プロフィール機能の実装
+export const NavRecentView = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
-            <VscAccount />
-          </NavigationMenuTrigger>
+          <NavigationMenuTrigger>最近見た項目</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <Link href={"/accounts"}>個人設定</Link>
+            {/* TODO: 最近見た項目機能の実装 */}
           </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>
