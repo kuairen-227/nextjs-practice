@@ -18,7 +18,9 @@ export const NavProjects = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>プロジェクト</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-gray-100 data-[state=open]:text-green-600">
+            プロジェクト
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             {projects.map((project) => (
               <Link
