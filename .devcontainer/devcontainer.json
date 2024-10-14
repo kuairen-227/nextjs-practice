@@ -1,5 +1,5 @@
 {
-  "name": "Next.js-App",
+  "name": "Next.js-Practice",
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "app",
   "workspaceFolder": "/app",
@@ -17,11 +17,9 @@
         "mhutchie.git-graph",
         "streetsidesoftware.code-spell-checker",
         "vivaxy.vscode-conventional-commits",
-        "yzhang.markdown-all-in-one"
-      ],
-      "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-      }
+        "yzhang.markdown-all-in-one",
+        "meganrogge.template-string-converter"
+      ]
     }
   },
   "postStartCommand": "yarn install"
