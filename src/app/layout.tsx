@@ -1,6 +1,6 @@
+import "@/app/globals.css";
 import { Header } from "@/components/layouts";
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
   title: "プロジェクト管理アプリ",
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className="bg-gray-100">
         <header>
           <Header />
