@@ -8,14 +8,18 @@ export const metadata: Metadata = {
   description: "プロジェクト管理アプリのサンプルです",
 };
 
-export default function RootLayout({
+export default async function ProjectLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ projectId: string }>;
 }) {
+  const projectId = await (await params).projectId;
+
   return (
     <SidebarProvider>
-      <ProjectSidebar />
+      <ProjectSidebar projectId={projectId} />
       <main className="p-5">{children}</main>
     </SidebarProvider>
   );

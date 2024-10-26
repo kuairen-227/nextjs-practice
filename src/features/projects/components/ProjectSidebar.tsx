@@ -12,19 +12,24 @@ import { projectPages } from "../const/projectPages";
 
 import Link from "next/link";
 
-export const ProjectSidebar = () => {
+type ProjectSidebarProps = {
+  projectId: string;
+};
+
+export const ProjectSidebar = ({ projectId }: ProjectSidebarProps) => {
+  const baseUrl = `/projects/${projectId}`;
 
   return (
     <Sidebar collapsible="icon">
       <SidebarContent className="bg-green-950">
         <SidebarMenu>
           <SidebarTrigger />
-          {items.map((item) => (
-            <SidebarMenuItem key={item.title}>
+          {projectPages.map((page) => (
+            <SidebarMenuItem key={page.title}>
               <SidebarMenuButton asChild>
-                <Link href={item.url}>
-                  <item.icon />
-                  <span>{item.title}</span>
+                <Link href={baseUrl + page.url}>
+                  <page.icon />
+                  <span>{page.title}</span>
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
