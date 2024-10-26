@@ -5,5 +5,12 @@
     "package.json",
     "yarn.lock"
   ],
-  "words": ["clsx", "devcontainer", "nextjs", "tailwindcss"]
+  "words": [
+    "clsx",
+    "devcontainer",
+    "gantt",
+    "lucide",
+    "nextjs",
+    "tailwindcss"
+  ]
 }

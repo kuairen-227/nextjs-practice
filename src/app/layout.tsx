@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="ja">
       <body className="bg-gray-100">
         <header>
           <Header />
         </header>
-        <div className="p-5">{children}</div>
+        <main className="p-5">{children}</main>
       </body>
     </html>
   );
