@@ -1,66 +1,71 @@
-import { BiSolidHome } from "react-icons/bi";
-import { FaFolder, FaGitAlt, FaPlus } from "react-icons/fa";
-import { FaChartGantt } from "react-icons/fa6";
-import { FcWikipedia } from "react-icons/fc";
-import { IoIosListBox, IoIosSettings } from "react-icons/io";
-import { IoDocumentTextOutline } from "react-icons/io5";
-import { MdOutlineViewKanban } from "react-icons/md";
-import { SiSubversion } from "react-icons/si";
+import {
+  ChartGantt,
+  FileText,
+  Folder,
+  GitCommitHorizontal,
+  GitGraph,
+  House,
+  List,
+  Plus,
+  ScrollText,
+  Settings,
+  SquareKanban,
+} from "lucide-react";
 
 export const projectPages = [
   {
     title: "ホーム",
     url: "/",
-    icon: BiSolidHome,
+    icon: House,
   },
   {
     title: "課題の追加",
     url: "/add",
-    icon: FaPlus,
+    icon: Plus,
   },
   {
     title: "課題",
     url: "/find",
-    icon: IoIosListBox,
+    icon: List,
   },
   {
     title: "ボード",
     url: "/board",
-    icon: MdOutlineViewKanban,
+    icon: SquareKanban,
   },
   {
     title: "ガントチャート",
     url: "/gantt",
-    icon: FaChartGantt,
+    icon: ChartGantt,
   },
   {
     title: "ドキュメント",
     url: "/document",
-    icon: IoDocumentTextOutline,
+    icon: FileText,
   },
   {
     title: "Wiki",
     url: "/wiki",
-    icon: FcWikipedia,
+    icon: ScrollText,
   },
   {
     title: "ファイル",
     url: "file",
-    icon: FaFolder,
+    icon: Folder,
   },
   {
     title: "Subversion",
     url: "/subversion",
-    icon: SiSubversion,
+    icon: GitCommitHorizontal,
   },
   {
     title: "Git",
     url: "/git",
-    icon: FaGitAlt,
+    icon: GitGraph,
   },
   {
     title: "プロジェクト設定",
     url: "/settings",
-    icon: IoIosSettings,
+    icon: Settings,
   },
 ];

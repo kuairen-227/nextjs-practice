@@ -1,6 +1,6 @@
-import { VscEye } from "react-icons/vsc";
+import { Eye } from "lucide-react";
 
 export const Watch = () => {
   // TODO: ウォッチ機能の実装
-  return <VscEye />;
+  return <Eye />;
 };

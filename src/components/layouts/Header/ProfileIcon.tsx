@@ -5,8 +5,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
+import { CircleUserRound } from "lucide-react";
 import Link from "next/link";
-import { VscAccount } from "react-icons/vsc";
 
 export const ProfileIcon = () => {
   // TODO: プロフィール機能の実装
@@ -15,7 +15,7 @@ export const ProfileIcon = () => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <VscAccount />
+            <CircleUserRound />
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <Link href={"/accounts"}>個人設定</Link>

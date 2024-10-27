@@ -2,8 +2,8 @@
 
 import { Slot } from "@radix-ui/react-slot";
 import { VariantProps, cva } from "class-variance-authority";
+import { Menu } from "lucide-react";
 import * as React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -279,7 +279,7 @@ const SidebarTrigger = React.forwardRef<
       }}
       {...props}
     >
-      <RxHamburgerMenu />
+      <Menu />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   );

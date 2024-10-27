@@ -1,6 +1,6 @@
-import { IoNotifications } from "react-icons/io5";
+import { Bell } from "lucide-react";
 
 export const Notification = () => {
   // TODO: お知らせ機能の実装
-  return <IoNotifications />;
+  return <Bell />;
 };
