@@ -7,9 +7,9 @@ import {
   House,
   List,
   Plus,
+  ScrollText,
   Settings,
   SquareKanban,
-  TableOfContents,
 } from "lucide-react";
 
 export const projectPages = [
@@ -46,7 +46,7 @@ export const projectPages = [
   {
     title: "Wiki",
     url: "/wiki",
-    icon: TableOfContents,
+    icon: ScrollText,
   },
   {
     title: "ファイル",
