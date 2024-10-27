@@ -1,6 +1,6 @@
-import { IoHelpCircleOutline } from "react-icons/io5";
+import { CircleHelp } from "lucide-react";
 
 export const Help = () => {
   // TODO: ヘルプ機能の実装
-  return <IoHelpCircleOutline />;
+  return <CircleHelp />;
 };
