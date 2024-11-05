@@ -1,6 +1,6 @@
-# nextjs-template
+# nextjs-practice
 
-Next.js (App router) 用テンプレート
+Next.js (App router) 練習用（プロジェクト管理ツール）
 
 ## :notebook: ドキュメント一覧
 
