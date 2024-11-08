@@ -47,3 +47,7 @@ React と Tailwind CSS に基づいた UI フレームワークで、シンプ�
 ### :pushpin: [class-variance-authority](https://cva.style/docs)
 
 スタイルを柔軟に変更するためのライブラリで、ビジュアルの一貫性を保ちながら、デザインのバリエーション管理を容易にします。
+
+### :heavy_check_mark: [Zod](https://zod.dev/)
+
+TypeScript 向けの型安全なバリデーションライブラリで、API レスポンスやフォーム入力などのデータ検証に使用しています。Zod の柔軟な型定義と、エラーメッセージの生成などの機能により、安全かつ効率的な開発が可能になります。
