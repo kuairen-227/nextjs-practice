@@ -7,12 +7,14 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { ProjectList } from "@/feature/projects/api/getProjects";
+import { getProjects } from "@/features/projects/api";
 import Link from "next/link";
 
-export const NavProjects = () => {
-  // TODO: プロジェクト一覧取得機能の実装
-  const projects = ProjectList;
+/**
+ * プロジェクトナビゲーション
+ */
+export const NavProjects = async () => {
+  const projects = await getProjects();
 
   return (
     <NavigationMenu>
