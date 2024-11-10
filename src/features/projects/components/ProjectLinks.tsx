@@ -15,7 +15,7 @@ export const ProjectLinks = async () => {
     <>
       {/* TODO: 課題とかも選択できるようにする */}
       <Accordion type="single" collapsible>
-        <AccordionItem value="プロジェクト">
+        <AccordionItem value="projects">
           <AccordionTrigger>プロジェクト</AccordionTrigger>
           <AccordionContent>
             {projects.map((project) => (
