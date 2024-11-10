@@ -20,6 +20,7 @@ export const ProjectLinks = async () => {
           <AccordionContent>
             {projects.map((project) => (
               <Link
+                key={project.id}
                 href={`/projects/${project.id}`}
                 className="flex bg-white border"
               >
