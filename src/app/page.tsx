@@ -1,3 +1,4 @@
+import { ProjectLinks } from "@/features/projects/components";
 import Image from "next/image";
 
 export default function Dashboard() {
@@ -7,6 +8,9 @@ export default function Dashboard() {
       <div className="flex justify-center">
         <Image src="/" width={50} height={50} alt="Company Icon" />
         <h1 className="font-bold text-xl">Your Company</h1>
+      </div>
+      <div>
+        <ProjectLinks />
       </div>
     </div>
   );
