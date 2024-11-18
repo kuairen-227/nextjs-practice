@@ -20,7 +20,7 @@ export const NavProjects = async () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-gray-100 data-[state=open]:text-green-600">
+          <NavigationMenuTrigger className="data-[state=open]:text-green-600">
             プロジェクト
           </NavigationMenuTrigger>
           <NavigationMenuContent>

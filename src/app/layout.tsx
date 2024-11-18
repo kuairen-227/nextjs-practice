@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-import { Header } from "@/components/layouts";
+import { Header, ThemeProvider } from "@/components/layouts";
 import type { Metadata } from "next";
 import { MSWProvider } from "./msw-provider";
 
@@ -20,13 +20,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
-      <body className="bg-gray-100">
+    <html lang="ja" suppressHydrationWarning>
+      <body>
         <MSWProvider>
-          <header>
-            <Header />
-          </header>
-          <main className="p-5">{children}</main>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <header>
+              <Header />
+            </header>
+            <main className="p-5">{children}</main>
+          </ThemeProvider>
         </MSWProvider>
       </body>
     </html>

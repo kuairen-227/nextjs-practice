@@ -21,7 +21,7 @@ export const ProjectSidebar = ({ projectId }: ProjectSidebarProps) => {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarContent className="bg-green-950">
+      <SidebarContent>
         <SidebarMenu>
           <SidebarTrigger />
           {projectPages.map((page) => (
