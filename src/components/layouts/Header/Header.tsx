@@ -2,6 +2,7 @@ import { House } from "lucide-react";
 import Link from "next/link";
 import { Filter } from "./Filter";
 import { Help } from "./Help";
+import { ModeToggle } from "./ModeToggle";
 import { NavProjects } from "./NavProjects";
 import { NavRecentView } from "./NavRecentView";
 import { Notification } from "./Notification";
@@ -22,6 +23,7 @@ export const Header = () => {
         <Filter />
       </div>
       <div className="flex items-center">
+        <ModeToggle />
         <SearchBox />
         <Watch />
         <Notification />
