@@ -12,7 +12,7 @@ import { Watch } from "./Watch";
 
 export const Header = () => {
   return (
-    <div className="flex items-center justify-between border-y-2">
+    <div className="flex items-center justify-between border-y">
       <div className="flex items-center">
         <Link href={"/"}>
           <House />
