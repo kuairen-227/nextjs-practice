@@ -22,7 +22,7 @@ export const ProjectLinks = async () => {
               <Link
                 key={project.id}
                 href={`/projects/${project.id}`}
-                className="flex bg-white border"
+                className="flex border"
               >
                 <Image src="/" width={50} height={50} alt="Project Icon" />
                 {project.name}
